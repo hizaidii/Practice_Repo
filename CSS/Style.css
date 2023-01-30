@@ -1,0 +1,754 @@
+/* you can inset the FONT LINK HERE as well, like below */
+
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap);
+
+* {
+    font-family: 'Inter', sans-serif;
+    /* margin: 0;
+    padding: 0;
+    box-sizing: border-box; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    border-bottom: 3px solid lightgray;
+    height: 70px;
+    background-color: rgb(231, 231, 231);
+}
+.Button {
+    display: inline-block;
+    background-color: rgb(66, 66, 66);
+    text-align: center;
+    vertical-align: middle;
+    line-height: 70px;
+    color: white;
+    height: 100%;
+    width: 150px;
+    font-weight: 300;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+.Left_Panel {
+    width: 20%;
+    background-color: rgb(231, 231, 231);
+    height: 900px;
+    float: left;
+    border-right: 3px solid lightgray;
+    box-sizing: border-box;
+}
+.top_profile {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 3px solid lightgray;
+    height: 320px;
+}
+.top_profile img {
+    height: 250px;
+    margin-bottom: 10px;
+}
+.bottom_details {
+    padding: 40px;
+}
+.stats {
+    padding: 7px;
+    padding-left: 0px;
+}
+
+
+.Right_Panel {
+    width: 80%;
+    background-color: rgb(231, 231, 231);
+    height: 900px;
+    float: right;
+}
+.Intro {
+    padding-left: 100px;
+    padding-right: 150px;
+    padding-top: 50px;
+}
+.Intro img {
+    float: left;
+    padding: 20px;
+}
+.text1 {
+    padding-top: 1px;
+}
+.Gallery {
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+}
+.Gallery img {
+    margin: 20px;
+    align-content: center;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 700;
+
+}/* Angela course starts from here  */
+/* Angela course starts from here  *//* Angela course starts from here  */
+/* Angela course starts from here  *//* Angela course starts from here  */ /* Angela course starts from here  */
+/* Angela course starts from here  *//* Angela course starts from here  */
+/* Angela course starts from here  */
+
+button {
+    height: 60px;
+    width: 200px;
+    font-size: 18px;
+}
+/* You can have class selected with STATES like hover, active etc */
+button:hover {
+    height: 60px;
+    width: 200px;
+    font-size: 18px;
+    background-color: aqua;
+}
+
+.span_example {
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: bold;
+    color: brown;
+}
+
+/* Using DISPLAY and POSITION property. Display property allows boxes to show next to eachother on the same line (while being able to adjust their wdith)
+
+POSITION: RELATIVE property allows element to move from their original position to LEFT or RIGHT or TOP or BOTTOM margin as specified */
+
+.relative {
+    background-color: wheat;
+}
+.redrelative {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: inline-block;
+    position: relative;
+    left: 550px;
+}
+
+.bluerelative {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    display: inline-block;
+}
+
+.yellowrelative {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    display: inline-block;
+    position: relative;
+    top: 150px;
+}
+
+/* When we use ABSOLUTE position for a child element, it must be contained inside a conteiner that is set to RELATIVE/ABSOLUTE (or basically any position other than default Static) position. (otherwise it will be absolute to the 'world' */
+.absolute {
+    background-color: thistle;
+    position: relative;
+ 
+}
+
+.redabsolute {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: inline-block;
+    position: absolute;
+    right: 150px;
+    bottom: 150px
+}
+/* using absolute position makes all other objects behave as if that element didnt exist! And move accordingly as if that absolute element was deleted */
+
+/* Use ABSOLUTE position property to take an Element OUT OF HTML FLOW */
+.blueabsolute {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    display: inline-block;
+}
+
+.yellowabsolute {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    display: inline-block;
+ 
+}
+
+.stickydiv {
+    background-color: rgb(238, 227, 238);
+}
+/* sticky needs atleast ONE (top, left, right, bottom) parameter defined */
+.stickyposition {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(209, 209, 124);
+    display: inline-block;
+    position: sticky;
+    top: 20px;
+    right: 20px;
+}
+
+.fixposition {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 255, 209);
+    display: inline-block;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+
+/* FONTS here */
+
+.testing-fonts {
+    
+    font-size: 28px;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    /* font-size: 1em; */
+}
+
+.em-font {
+    font-size: 1em;
+}
+
+.px-font {
+    font-size: 16px;
+}
+
+/* This section is about FLEXBOXES */
+
+.flexbox-container {
+    background-color: linen;
+    height: 600px;
+
+    display: flex;
+    flex-direction: row;
+    /* Justify-content uses MAIN axis, which in this case is row */
+    justify-content: space-around; 
+    /* Align-items uses CROSS axis, which in this case is column */
+    align-items: center;
+    /* flex wrap will stack the contents vertically when screen size shrinks */
+    flex-wrap: wrap;
+    /* the align content is not used very often */
+    align-content: flex-end;
+
+}
+
+.flexbox-item {
+    border: 2px solid gray;
+    background-color: lightgrey;
+    padding: 20px;
+    margin: 20px;
+}
+
+.flexbox1 {
+    height: 100px;
+    /* flex shrink helps objects retain minimum width on smaller screen */
+    flex-shrink: 0;
+    /* flex-basis sets the initial MAIN size of the object */
+    flex-basis: 250px;
+}
+
+.flexbox2 {
+    height: 200px;
+    /* flex-grow will let an object grow in certain proportion (to the available space, outside of predefined width) when screen expands */
+    flex-grow: 2;
+}
+
+.flexbox3 {
+    height: 300px;
+    flex-grow: 1;
+    /* align-self applies a local align logic to the object */
+    align-self: flex-end;
+}
+
+.form-items {
+    min-height: 40px;
+}
+
+/* FROM HERE STARTS THE FREECODECAMP CSS TUTORIAL!  */
+/* FROM HERE STARTS THE FREECODECAMP CSS TUTORIAL!  */
+/* FROM HERE STARTS THE FREECODECAMP CSS TUTORIAL!  */
+/* FROM HERE STARTS THE FREECODECAMP CSS TUTORIAL!  */
+
+.freecodecamp {
+    background-color: lightgray;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.ghodey {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: aliceblue;
+    color: darkblue;
+}
+
+.ghodey h2 {
+    color: rgb(255, 0, 0);
+}
+/* below selector overrides the above since it's cascading */
+.ghodey h2 {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* TO SELECT 2 CLASSES AT ONCE - use Comma! to seperate them */
+.first, .second {
+    color: rgb(136, 45, 3);
+}
+
+/* TO SELECT A SPECIFIC NESTED CLASS - Dont use comma */
+.ghodey .third {
+    font-size: 30px;
+}
+/* notice it didnt have an effect on Third class para which is OUTSIDE ghodey div */
+
+.highlight {
+    text-transform: uppercase;
+    font-style: italic;
+    background-color: gold;
+}
+
+.testingButton {
+    font-size: 18px;
+    font-style: italic;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+/* below and above are examples of INHERIT value for a property */
+.fontTestButton {
+    font-size: inherit;
+    font-style: inherit;
+    text-transform: inherit;
+    font-family: inherit;
+}
+
+.containers {
+    border: 2px solid black;
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+}
+
+.paraWidth {
+    width: 70%;
+    border: 1px dashed red;
+}
+
+.paraWidth2 {
+    width: 40ch;
+}
+
+.newProperties {
+    border: 5px double red;
+}
+
+/* THIS SHOWS STYLING LINKS */
+.styledLink {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(104, 104, 4);
+}
+
+.styledLink:visited {
+    color: rgb(46, 167, 189);
+}
+
+.styledLink:hover {
+    color: rgb(92, 104, 68);
+    background-color: rgb(192, 172, 134);
+}
+
+a:active {
+    color: orangered;
+}
+
+/* THIS SECTION IS ALL ABOUT DISPLAY : BLOCK, INLINE, INLINE-BLOCK */
+
+.blocks {
+    display: block;
+    background-color: aqua;
+    width: 40%;
+    height: 20vh;
+    margin: 2rem;
+}
+
+.inlines {
+    display: inline;
+    background-color: blueviolet;
+    width: 500px;
+    height: 100px;
+    margin: 2rem;
+}
+
+
+.inlineBlocks {
+    display: inline-block;
+    background-color: chocolate;
+    width: 500px;
+    height: 100px;
+    margin: 2rem;
+}
+
+/* FLOAT PROPERTY starts here */
+
+.float {
+    height: 12vw;
+    width: 12vw;
+    background-color: cornflowerblue;
+}
+.left {
+    float: left;
+    margin-right: 1rem;
+}
+.right {
+    float: right;
+    margin-left: 1rem;
+}
+
+.flowRoot {
+    background-color: bisque;
+    border: 1px solid #333;
+    display: flow-root;
+}
+
+/* this is about COLUMNS! */
+.columns {
+    columns: 4 250px;
+    column-rule: 2px solid #333;
+    column-gap: 3rem;
+    break-inside: avoid;
+}
+
+.quote {
+    font-size: 2rem;
+    text-align: center;
+    column-span: all;
+}
+
+/* this section is about POSITION PROPERTY!! */
+
+.outerContainer {
+    border: 2px solid black;
+    height: 80vh;
+    width: 50vw;
+    margin: 0 auto;
+    position: relative;
+}
+
+.innerContainer {
+    border: 2px dashed black;
+    height: 60vh;
+    width: 30vw;
+    margin: 100px auto;
+    /* position: relative; */
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    padding: 1rem;
+}
+/* ABSOLUTE needs its parent to have RELATIVE property, otherwise it will be relative to WORLD/browser */
+.absolutes {
+    background-color: cadetblue;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+}
+/* will be positioned RELATIVE to parent containr, regardless of their position property */
+.relatives {
+    background-color: darkslategrey;
+    color: white;
+    position: relative;
+    top: 100px;
+    left: 300px;
+}
+/* FIXED will always be fixed w.r.t the WORLD */
+.fixeds {
+    background-color: lightcoral;
+    position: fixed;
+    bottom: 150px;
+    right: 75px;
+}
+/* STICKY is positioned w.r.t to WORLD coordinates but will stay within parent container always and will stick to WORLD coordinates. */
+.stickys {
+    background-color: mistyrose;
+    position: sticky;
+    top: 100px;
+    left: 1200px;
+}
+
+.statics {
+    background-color: white;
+}
+
+.spacer {
+    min-height: 10vh;
+}
+/* header and footer */
+.fixedFooter {
+    background-color: wheat;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+/* this section is about DISPLAY: FLEX property! */
+
+.flexContainer {
+    border: 2px solid black;
+    width: 70vw;
+    height: 50vh;
+    /* margin-inline: auto; */
+    margin: 20px auto 100px auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}
+
+.flexItem {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexContainer2 {
+    border: 2px solid black;
+    width: 70vw;
+    height: 50vh;
+    /* margin-inline: auto; */
+    margin: 20px auto 100px auto;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column-reverse;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    align-content: space-evenly;
+}
+
+/* Here starts the properties for GRIDS! */
+
+/* this is for the MAIN grid (for overall page, header, main, sidebar, footer). We're using the AREA method here */
+.mainGrid {
+    min-height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-auto-rows: 75px auto 75px;
+    grid-template-areas: 
+        "hd hd hd hd hd hd hd hd hd"
+        "mn mn mn mn mn mn mn sb sb"
+        "ft ft ft ft ft ft ft ft ft";
+}
+
+.header1 {
+    background-color: purple;
+    grid-area: hd;
+    color: white;
+    /* setting it to grid to align contents inside. It shouldnt change anything for parent grid*/
+    display: grid;
+    /* this property is SHORTHAND for Align-Content & Justify-content */
+    place-content: center center;
+}
+
+.sidebar1 {
+    background-color: blue;
+    grid-area: sb;
+    color: white;
+    display: grid;
+    place-content: center center;
+}
+
+.footer1 {
+    background-color: purple;
+    grid-area: ft;
+    color: white;
+    display: grid;
+    place-content: center center;
+}
+
+/* this is for NESTED GRID, within the main/selection element for further content */
+
+.main1 {
+    background-color: white;
+    grid-area: mn;
+    display: grid;
+    gap: 10px 10px;
+
+    /* you DON'T REALLY need to define below 2 settings, just defining grid-column/row in child elements will automatically create the grid. However, it would automatically take all grids and columns for 1:1. Hence, to define precise ratio you must use these settings. Uncomment them to see what I mean.. */
+
+    /* grid-template-columns: 100px auto 1fr 20% 3rem;
+    grid-template-rows: repeat(2, 1fr 2fr); */
+}
+
+/* Just defining grid-column/row in these child elements will automatically create the grid */
+.box2 {
+    background-color: black;
+    color: white;
+}
+
+.box2:first-child {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.box2:nth-child(2) {
+    /* this is a SHORTHAND for Grid-column/row-start+end */
+    grid-column: 4/6;
+    grid-row: 1/2;
+}
+
+.box2:nth-child(3) {
+    grid-column: 4/6;
+    grid-row: 2/3;
+}
+
+.box2:nth-child(4) {
+    grid-column: 1/6;
+    grid-row: 3/4;
+}
+
+/* IMAGES section starts here */
+
+/* this is the profile picture banner */
+.body3 {
+    margin: 100px 0;
+}
+  
+.container3 {
+    background-color: rgb(251, 210, 156);
+    background-image: url('../Images/map-2176x1451.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+  
+.hero3 {
+    border-bottom: 2px solid #000;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+  
+    background-color: hsla(0, 0%, 100%, 0.35);
+  
+}
+  
+.h1 {
+    font-size: 500%;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px #000;
+    /* background-color: hsla(0, 0%, 0%, 0.403);
+    padding: 0.25rem;
+    border-radius: 10px; */
+}
+  
+.profile-pic-figure {
+    width: 35%;
+}
+  
+.profile-pic-figure img {
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    border: 5px double gray;
+    border-radius: 50%;
+}
+  
+/* this is second bubbles image */
+.body4 {
+    background-color: aliceblue;
+    min-height: 100vh;
+
+    /* background-image: url("../Images/bubbles.png"), linear-gradient(to left, steelblue, #fff);
+    background-repeat: repeat-y, no-repeat;
+    background-position: right center; */
+    
+    background: repeat-y right center url("../Images/bubbles.png"), no-repeat linear-gradient(to left, steelblue, #fff);
+    background-size: 20%, auto;
+}  
+
+/* this is third JANE image*/
+.clip {
+    font-weight: 800;
+    font-size: 18rem;
+    text-align: center;
+    background-image: url("../Images/scenic-2200x1331.png");
+    background-size: 100%;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+/* BOILER PLATE CSS CODE */
+
+
+/* Reset Starts
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+} 
+
+img {
+    display: block
+}
+Reset Ends
+
+utility classes
+
+use .nowrap as class name for 'Span' of things you don't want to break
+.nowrap {
+    white-space: nowrap;
+}
+
+use .offscreen class for any element you dont want to show on screen. Eg - <figcaption>
+.offscreen {
+    position: absolute;
+    left: 10000px;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+} */
+
