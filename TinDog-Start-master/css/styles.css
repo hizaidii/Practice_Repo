@@ -32,6 +32,7 @@ textarea {
 body {
     /* font-family: 'Raleway', sans-serif; */
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* Header - Navbar */
@@ -94,7 +95,7 @@ body {
 }
 
 .btn-apple {
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(56, 56, 56);
     color: white;
     font-size: 16px;
     font-weight: 500;
@@ -161,7 +162,7 @@ figure {
 }
 
 .featureCard p {
-    color: #343a40;
+    color: #7d7f84;
 }
 
 .featureIcons path {
@@ -177,7 +178,7 @@ figure {
 }
 
 .testimonial1 {
-    margin: 100px 15%;
+    margin: 15vh 15%;
     /* max-width: 60vw; */
     padding: 0 5%;
 }
@@ -206,15 +207,162 @@ figure {
     color: white;
     font-weight: 400;
 }
-
+/* Press */
 #press {
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
-    margin: 50px 15%;
+    margin: 0 15%;
     margin-bottom: 15vh;
 }
 
-/* #press img {
-    max-width: 400px;
-    height: auto;
-} */
+#press img {
+    max-width: 300px;
+    min-width: 100px;
+    flex-shrink: 1;
+    object-fit: scale-down;
+    margin: 20px;
+}
+
+/* Pricing */
+
+#pricing {
+    margin: 0 15%;
+    /* height: 100vh; */
+}
+
+.pricingHeader {
+    text-align: center;
+    margin: 10vh auto;
+}
+
+.pricingHeader h2 {
+    margin: 1rem;
+    font-size: 2.5rem;
+    color: #1f1f1f;
+}
+
+.pricingHeader p {
+    color: #7d7f84;
+}
+
+.pricingCardsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 20vh;
+}
+
+.pricingCard {
+    border: 2px solid rgb(224, 224, 224);
+    border-radius: 4px;
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.pricingCardHeader {
+    background-color: #f3f3f3;
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 2px solid rgb(224, 224, 224);
+}
+
+.pricingCardContent {
+    padding: 1rem;
+}
+
+.pricingCardContent h2 {
+    font-size: 2.25rem;
+    color: #1f1f1f;
+}
+
+.pricingCardContent p {
+    color: #7d7f84;
+    line-height: 2;
+}
+
+
+.pricingCardContent button {
+    width: 100%;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    /* height: 30px; */
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
+
+.pricingCardContent button:hover {
+    width: 100%;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+/* Call to Action */
+#cta {
+    background-color: #ff4c68;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    float: left;
+}
+
+#cta h3 {
+    display: block;
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 800;
+    text-shadow: 0 2px 10px hsla(0, 0%, 0%, 0.095);
+    /* margin-block: 2rem; */
+    margin: 100px 15%;
+}
+
+#cta button {
+    margin-bottom: 10vh;
+}
+
+#cta button:last-child {
+    background-color: white;
+    color: #1f1f1f;
+}
+
+#cta .btn-android .fa-brands {
+    color: #1f1f1f
+}
+
+/* Footer */
+
+#footer {
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 3vh;
+    float: left;
+    width: 100%;
+}
+
+.socialLogosContainer {
+    display: inline;
+}
+
+.socialLogos {
+    height: 16px;
+    margin: 10px;
+}
+
+.socialLogos path {
+    fill: rgb(56, 56, 56);
+}
+
+#footer p {
+    font-size: 14px;
+    color: #7d7f84;
+}
