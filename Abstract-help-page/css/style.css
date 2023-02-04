@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    /* width: 100%;
+    height: auto; */
+}
+
+input,
+button,
+textarea {
+    font: inherit;
+}
+
+/* Variables */
+
+:root {
+    --JET-BLACK: #000000;
+    --LIGHT-BLUE: #dadbf1;
+    --ALMOST-BLACK: #191a1b;
+    --PRIMARY: #4c5fd5;
+}
+
+html {
+    /* background-color: #000000; */
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+
+.topNav {
+    background-color: black;
+    color: white;
+    height: 88px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+
+}
+/* logo section Div */
+.logoSection {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.abstract-logo {
+    height: 35px;
+}
+
+.abstract-logo path {
+    fill: white;
+}
+
+.logoSection h1 {
+    border-left: 2px solid white;
+    padding-left: 12px;
+    margin-left: 12px;
+    font-weight: 300;
+}
+
+/* button section Div */
+.buttonSection {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    align-items: center;
+}
+
+.btn {
+    font-size: 1.3rem;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border-style: solid;
+    color: white;
+    border-width: 1px;
+}
+
+.req {
+    background-color: var(--ALMOST-BLACK);
+    border-color: white;
+}
+
+.sign {
+    background-color: var(--PRIMARY);
+    padding: 8px 24px;
+    border-style: none;
+}
+
+/* hero Search */
+.hero {
+    background-color: var(--LIGHT-BLUE);
+    text-align: center;
+    padding: 100px;
+}
+
+.hero h1 {
+    font-size: 72px;
+    font-weight: 400;
+    margin: 1rem auto;
+}
+
+#search {
+    height: 60px;
+    width: 700px;
+    border-color: var(--ALMOST-BLACK);
+    border-width: 1px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 10px hsla(0, 0%, 0%, 0.103);
+    padding-left: 16px;
+}
+
+.searchBar i {
+    position: relative;
+    right: 40px;
+}
+
+.fa-arrow-right {
+    font-size: 20px;
+}
+
+/* Main Cards Section */
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 3rem;
+    row-gap: 5rem;
+    background-color: white;
+    margin: 11rem 200px 9rem;
+}
+
+/* card global property */
+.card {
+    display: flex;
+}
+
+.cardIcon {
+    /* display: inline; */
+}
+
+.content {
+    margin-left: 24px;
+}
+
+.content h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--ALMOST-BLACK);
+}
+
+.content p {
+    font-size: 1.3rem;
+    color: var(--ALMOST-BLACK);
+    margin: 20px 10px 20px 0;
+}
+
+.content a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--PRIMARY);
+}
+
+
+
+/* footer */
+
+footer {
+    background-color: black;
+    height: 400px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul {
+    list-style: none;
+    margin-top: 4rem;
+}
+
+footer ul h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+footer li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.contactUs {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin-top: 2rem;
+}
+
+.info {
+    align-self: flex-end;
+    margin-bottom: 50px;
+}
+
+.info img {
+    margin-bottom: 20px;
+}
+
+.info p {
+    font-size: 18px;
+}
+
+/* Help button */
+.help {
+    background-color: var(--PRIMARY);
+    color: white;
+    width: 100px;
+    height: 44px;
+    border-radius: 22px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.help i {
+}
+
+.fa-circle-question {
+    font-size: 18px;
+}
+
+.help p {
+    font-weight: 500;
+}
